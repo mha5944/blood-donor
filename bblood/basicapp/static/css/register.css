@@ -1,0 +1,42 @@
+h3 {
+    color: rgb(191,32,37);
+}
+
+.center-div {
+    margin-top: 30px;
+    width: 400px;
+    height: 300px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.custom-login input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 270px;
+    height: 50px;
+    
+}
+
+.bigbtn {
+    width: 300px !important;
+    height: 60px !important;
+    margin-bottom: 15px !important;
+    font-weight: 700;
+} 
+
+.redbtn {
+    background-color: rgb(191,32,37) !important;
+    color: white;
+}
+.darkred {
+    color: rgb(191, 32, 37);
+}
+
+
+
+
+
+

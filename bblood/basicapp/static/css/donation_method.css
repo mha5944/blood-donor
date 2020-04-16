@@ -1,0 +1,52 @@
+.what-is-blood img {
+    width: 400px;
+    height: 300px;
+    margin-left: 60%;
+    margin-top: 5%;
+    position: absolute !important;
+}
+
+.content {
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 200px;
+    max-width : 30% !important;
+    display: inline-block;
+    position: absolute;
+}
+
+.what-is-blood {
+    position: relative !important;
+    display: flex !important;
+    height: 400px;
+    
+}
+
+.donation-method h2 {
+    text-decoration: underline;
+    position: absolute;
+    margin-left: 35%;
+}
+.donation-method {
+    display: flex;
+    height: 400px;
+    text-align: center !important;
+}
+
+
+.custom-donation-method {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    top: 25%;
+}
+.custom-donation-method img {
+    height: 220px;
+    width: 260px;
+}
+.custom-donation-method div {
+    margin-left: 4%;
+   
+}

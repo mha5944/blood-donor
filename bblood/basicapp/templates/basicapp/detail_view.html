@@ -1,0 +1,31 @@
+{% extends 'basicapp/base.html' %}
+{% block csslink %}
+{% endblock %}
+
+{% block body_block %}
+<div class="container">
+    {% if '{{user_data.case}}' == 'Reciver' %}
+        <h1 style="text-align: center;">Here is your Recivers Suggestion: </h1>
+    {% else %}
+        <h1 style="text-align: center;">Here is your Blood Donors Suggestion: </h1>
+    {% endif %}
+    
+    {% for data in user_profile %}
+        
+        <div class="card custom-card">
+            <div class="card-body">
+                <h5 class="card-title">Username : <span class="carddata">{{data.user}}</span></h5>
+                <p class="card-text">
+                    <span style=" font-size: small;" class="fas fa-phone-alt darkred"></span>  Phone Number : 
+                    <span class="carddata">{{ data.phone_number }}</span>
+                    </p>
+                <p class="card-text">
+                    <span style=" font-size: large; margin-right: 3px;" class="fas fa-hand-holding-water darkred"></span>  Blood Type : 
+                    <span class="carddata">{{ data.blood_type }}</span>
+                </p>
+              </div>
+        </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+-django built in registration part
+-login view ----
+-list view ----
+-profile view ----
+
+
+
+-edit profile

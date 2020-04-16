@@ -1,0 +1,34 @@
+{% extends 'basicapp/base.html' %}
+{% load static %}
+{% block csslink %}
+
+    <link rel="stylesheet" href="{% static 'css/donation_method.css' %}">
+{% endblock %}
+{% block body_block%}
+<div style='height: 100%;' class="container-fluid position-static">
+    <div class="what-is-blood">
+        
+            <div class=" content">
+                <h1>What is Blood?</h1>
+                <p> 
+                Blood is made up of four main components.
+                Red blood cells, platelets,
+                plasma and white blood cells.
+                Each whole blood donation has the potential 
+                to save up to three lives.
+                </p>
+                <button type="button" class="learn-more">Learn More</button>
+            </div>
+            <img src="{% static 'images/whatisblood-graphic.png' %}" alt="what is blood image">
+    </div>
+    <div class="donation-method">
+        <h2>Donation Methods</h2>
+        <div class="custom-donation-method">
+            <div><img src="{% static 'images/blood_donation.png' %}" alt="Blood donation "></div>
+            <div><img src="{% static 'images/plasma_donation.png' %}" alt="Plasma donation"></div>
+            <div><img src="{% static 'images/red_cell_donation.png' %}" alt="Red cell donation"></div>
+            <div><img src="{% static 'images/platelet_donation.png' %}" alt="Platelet donation"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

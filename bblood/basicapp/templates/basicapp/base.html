@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    {% block csslink %}
+    {% endblock %}
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/donor.ico' %}">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/82742595c6.js" crossorigin="anonymous"></script>
+    
+    <title>Blood Donor</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand bg-light techfont">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}" alt="logo image"></a></li>
+                <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.github.com">Github</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'donation_method' %}">How to Donate?</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                {% if user.is_authenticated %}
+                <li class="nav-item"><a class="nav-link" href="{% url 'detail_view' user.username %}">Detail</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Log Out</a></li>
+                <li class="nav-item"><a class="nav-link" id="userId darkred">Welcome: {{user.username}}</a></li>
+                {% else %}
+                <li><a class="nav navbar-nav navbar-right" href="{% url 'login' %}"><span style="margin-right: 30px; font-size: x-large;" class="fas fa-user"></span></a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+        {% block body_block %}
+
+        {% endblock %}  
+        <footer class="">
+            <div id="social-media">
+                <a href="https://www.twitter.com"><img src="{% static 'images/twitter_logo.png' %}" alt='twitter link'></a>
+                <a href="https://www.instagram.com"><img src="{% static 'images/insta_logo.png' %}" alt='instagram link'></a>
+                <a href="https://www.youtube.com"><img src="{% static 'images/youtube_logo.png' %}" alt='youtube link'></a>
+                <a href="https://www.facebook.com"><img src="{% static 'images/fb_logo.png' %}" alt='facebook link'></a>
+
+            </div>
+            <div class="custom-about d-flex flex-row">
+                <p>About</p>
+                <p>Contact us</p>
+                <p>Privacy</p>
+                <p>Terms of Use</p>
+            </div>
+        </footer>  
+</body>

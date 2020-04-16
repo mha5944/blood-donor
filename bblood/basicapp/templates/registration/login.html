@@ -1,0 +1,21 @@
+{% extends 'basicapp/base.html' %}
+{% load static %}
+{% block csslink %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block body_block %}
+<div class="container">
+    <div class="center-div custom-login">
+        <h3>Donor Login</h3>
+        <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="username" placeholder="Enter Username">
+        <input type="password" name="password" placeholder="Enter your password"><br> 
+        <input class="bigbtn redbtn" type="submit" value="Login"><br>
+        <a href="{% url 'register' %}"><button id='signin' class="bigbtn" type="button">Sign Up Here!</button></a>
+        </form>
+    </div>
+    
+</div>
+{% endblock %}
