@@ -1,0 +1,53 @@
+.part-one img {
+    height: 100%;
+    width: 100%;
+   
+}
+
+.part-one p {
+    width: 460px;
+    height: auto;
+    left: 160px;
+    top: 360px ;
+    position: absolute;
+    font-weight: 500;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.part-one {
+    position: relative;
+    height: 30rem;
+}
+
+.part-two {
+    height: 33rem;
+    position: relative;
+    background-color: rgb(211, 211, 211);
+
+}
+
+.btn-primary {
+    background-color: darkred !important;
+    border: 0px;
+}
+.part-two .card img {
+    height: 200px;
+    width: 190px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 1rem !important;
+}
+
+.part-two p {
+    font-size: small;
+    text-align: left;
+}
+
+.card {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 30rem;
+}

@@ -1,0 +1,52 @@
+{% extends 'basicapp/base.html' %}
+{% load static %}
+{% block csslink %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block body_block %}
+    <div class="" style=" height: 63rem;" >
+        <div class="part-one">
+            <img src="{% static 'images/screen-0.jpg' %}" alt="about image">
+            <p class="darkred">We are a 
+                not-for-profit 501(c)(3) community asset responsible
+                 for providing safe, available and affordable blood.</p>
+
+        </div>
+        <div class="part-two row">
+            <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/leadership.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title darkred">Leadership</h5>
+                  <p class="card-text">A board of directors oversees OneBlood.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/chart.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title darkred">Financials & Governance</h5>
+                  <p class="card-text">
+                      In effort to maintain compliance and transparency, 
+                      here you will find an archive of 
+                      our bylaws and operational details.
+                    </p>
+
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/handshake.png' %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title darkred">Donor Bill of Rights</h5>
+                  <p class="card-text">
+                      OneBlood is committed to treating our valued blood donors with respect,
+                       courtesy and professionalism. We could not fulfill our 
+                       lifesaving mission without the support of our donors.
+                    </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

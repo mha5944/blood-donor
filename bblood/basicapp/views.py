@@ -115,4 +115,10 @@ def user_login(request):
 
 
 def donation_method(request):
-            return render(request, 'basicapp/donation_method.html')
+    return render(request, 'basicapp/donation_method.html')
+
+def can_i_donate(request):
+    return render(request, 'basicapp/can-i-donate.html')
+
+def about(request):
+    return render(request, 'basicapp/about.html')

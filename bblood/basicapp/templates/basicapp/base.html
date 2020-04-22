@@ -14,8 +14,7 @@
     <!--Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/donor.ico' %}">
     <!--Icons-->
-    <script src="https://kit.fontawesome.com/82742595c6.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/82742595c6.js" crossorigin="anonymous"></script>    
     <title>Blood Donor</title>
 </head>
 <body>
@@ -24,9 +23,10 @@
         <div class="container">
             <ul class="nav navbar-nav">
                 <li><a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}" alt="logo image"></a></li>
-                <li class="nav-item"><a class="nav-link" href="">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.github.com">Github</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'can-i-donate' %}">Can I donate?</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'donation_method' %}">How to Donate?</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+
             </ul>
             
             <ul class="nav navbar-nav navbar-right">

@@ -1,0 +1,90 @@
+{% extends 'basicapp/base.html' %}
+{% load static %}
+{% block csslink %}
+    <link rel="stylesheet" href="{% static 'css/can-i-donate.css' %}">
+{% endblock %}
+
+{% block body_block %}
+<div class="container" >
+    <div class="article">
+        <h1>Can I Donate?</h1>
+    <p id="first-article">Many potential blood donors believe that they 
+        can’t donate blood due to medical or other reasons.
+         But whether you’ve heard or read information about 
+         donation restrictions or been turned down in the past,
+          please do not self defer. You may be able to say “Yes I can!”
+           and share your power through blood donation.
+         If you have questions about any of the subjects below,
+          please contact us for more information.
+    </p>
+    <img src="{% static 'images/article-1.jpg' %}" alt="image-1">
+
+
+    <h3>Anemia/Low Iron</h3>
+    <p>
+        Anemia is a condition that, if caused by low iron body reserves, 
+        can be corrected with a change in diet. Eating many types of red meat,
+         fortified cereal and leafy green vegetables may help.
+          Find out more about low iron and foods high in iron here.
+    </p>
+
+    <h3>Medication</h3>
+    <p>
+        While many medications may prevent you from giving blood
+        , you may still be able to donate while taking medications 
+        in the treatment of non-infectious diseases such as arthritis,
+         chronic pain, gout, etc.
+    </p>
+
+    <h3>High Blood Pressure</h3>
+    <p>If your blood pressure is under control, 
+        you may still be able to donate blood while 
+        taking most medications for high blood pressure.
+    </p>
+
+    <h3>Diabetes</h3>
+    <p>
+        If your diabetes is being treated and is under control, 
+        you are most likely able to donate blood.
+         You should let your doctor know that you plan to donate.
+    </p>
+
+    <h3>Cancer</h3>
+    <p>
+        <img src="{% static 'images/article-2.jpg' %}" alt="image-1">
+        Most localized skin cancers are not a reason
+         to stop you from donating blood.
+         Because many different types of cancer exist, 
+         we will ask you a few questions regarding your diagnosis,
+         and in some cases the blood center medical director may make the final determination on the deferral.
+         Most often, people who are free of relapse a year after completion of treatment are able to donate blood.
+    </p>
+
+    <h3>Tattoos and Body Piercing</h3>
+    <p>
+         People who received a tattoo at a state-licensed
+         and regulated facility are now eligible to donate 
+         once the area has healed. People who received a tattoo at a 
+         non-regulated facility must wait 12-months before they can donate.
+         People who received any type of body piercing done with single 
+         use equipment are now eligible to donate once the area has healed.
+         All other types of piercings require a 12-month wait before donating
+    </p>
+    
+
+    <h3>Age</h3>
+    <p style="float: none;">
+        <img src="{% static 'images/article-3.jpg' %}" alt="image-1">
+        OneBlood welcomes blood donations from donors 16 years old and older. 
+        16 year-old donors, however, must present a signed permission form from 
+        their parent or a guardian before the donation.
+        And you are never too old to donate. If you are in good health, 
+        and qualify for other eligibility guidelines, you can donate blood regardless of age. 
+        A number of regular donors over the age of 80 give blood with OneBlood.
+    </p>
+    
+    </div>
+    
+
+</div>
+{% endblock %}
