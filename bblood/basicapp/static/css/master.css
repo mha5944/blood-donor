@@ -81,10 +81,15 @@ a.nav-link {
        width: 100%;
        height: 150px;
   }
-  footer p {
+  .custom-about a {
     font-size: medium;
     color: wheat;
     }
+
+.custom-about a:hover {
+    color: wheat;
+    text-decoration: underline;
+}    
 
 .custom-about {
     top: 60%;
@@ -92,11 +97,10 @@ a.nav-link {
     left: 30%;
 }
 
-.custom-about p {
+.custom-about a {
     margin-left: 2%;
     margin-right: 2%;
 }
-
 
 
 

@@ -25,7 +25,7 @@ SECRET_KEY = 'g=q1q2x)(wp-i!g^lsl236)7_jaa*7wp1*ht#d097x5pum81wl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gazegan.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -121,3 +121,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STAIC_DIR = os.path.join(BASE_DIR,'static')
     
+
+#SMTP configuration
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'mha299299@gmail.com'
+EMAIL_HOST_PASSWORD = 'Ahmadi 5944'
