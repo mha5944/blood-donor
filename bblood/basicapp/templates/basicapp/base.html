@@ -19,10 +19,15 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand bg-light techfont">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light techfont">
+        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}" alt="logo image"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="{% static 'images/collapse.png' %}" style="width: 40px; height: 30px;"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNav">
+          <div class="container">
             <ul class="nav navbar-nav">
-                <li><a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}" alt="logo image"></a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'can-i-donate' %}">Can I donate?</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'donation_method' %}">How to Donate?</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
@@ -38,6 +43,7 @@
                 <li><a class="nav navbar-nav navbar-right" href="{% url 'login' %}"><span style="margin-right: 30px; font-size: x-large;" class="fas fa-user"></span></a></li>
                 {% endif %}
             </ul>
+          </div>
         </div>
     </nav>
         {% block body_block %}
@@ -52,7 +58,7 @@
 
             </div>
             <div class="custom-about d-flex flex-row">
-                <a id="about">About</a>
+                <a>About</a>
                 <a>Contact us</a>
                 <a>Privacy</a>
                 <a>Terms of Use</a>

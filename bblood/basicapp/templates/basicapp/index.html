@@ -1,12 +1,110 @@
 {% extends 'basicapp/base.html' %}
 {% load static %}
+
+{% block csslink %}
+
+{% endblock %}
+
+
 {% block body_block %}
 <div class=' container custom-container '>
-    <div class='custom-index'>
-        <div style=" position: relative; display:block;margin:auto;">
-            <img class='bg-image' src="{% static 'images/background.jpg' %}">
-            <div class='text-block'><p>4.5 million Americans will a need blood transfusion each year.</p></div>
+    <div class="row bg-dark">
+        <div id="Carousel-part" class="carousel slide w-100" data-ride='carousel' >
+           <!-- Indicators -->
+           <ol class="carousel-indicators" >
+            <li data-target="#Carousel-part" data-slide-to="0" style="border-radius: 50%; width: 12px; height: 12px" class="active" ></li>
+            <li data-target="#Carousel-part" data-slide-to="1" style="border-radius: 50%; width: 12px; height: 12px"></li>
+           </ol>
+           <!-- The slideshow -->
+           <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="60000">
+                  <img src="{% static 'images/Picture1.jpg' %}" class="d-block w-100 img-fluid" style="filter:brightness(.5)">
+                  <div class="carousel-caption">
+                      <p>4.5 million Americans will a need blood transfusion each year.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="{% static 'images/Picture3.jpg' %}" class="d-block w-100 img-fluid">
+                <div class="carousel-caption mp-auto">
+                    <p>Donate Blood, Save Life</p>
+                </div>
+              </div>
+            </div>
+              <a class="carousel-control-prev" href="#Carousel-part" data-slide="prev" role="button">
+                <span class="carousel-control-prev-icon" ></span>
+              </a>
+              <a class="carousel-control-next" href="#Carousel-part" data-slide="next" role="button">
+                <span class="carousel-control-next-icon"></span>
+              </a>
         </div>
     </div>
+    <div class="row section-two">
+        <div class="card" >
+            <img class="card-img-top" src="{% static 'images/donation-card1.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Donate for first time?</h5>
+              <p class="card-text">Important information for new Donors</p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card" >
+            <img class="card-img-top" src="{% static 'images/donation-card2.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Coronavirus safety for donors</h5>
+              <p class="card-text">We have put extra safety measures in place at our donation venues.</p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card" >
+            <img class="card-img-top" src="{% static 'images/donation-card3.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Cancelled appointments</h5>
+              <p class="card-text">Sorry if your donation has been cancelled.
+                   Keeping donors two metres apart 
+                   has meant reducing appointments.</p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <!-----card effect-->
+    <script>
+        var card = document.querySelectorAll('.card');
+        for (i=0 ; i<card.length ; i++){
+            card[i].addEventListener('mouseover',changeColor);
+            card[i].addEventListener('mouseout', changeColor);
+        }
+            
+        
+
+        function changeColor(obj){
+            console.log(obj.target.parentElement.className)
+            if (obj.target.parentElement.className == 'card'){
+                 var title = obj.target.parentElement.lastElementChild.firstElementChild;
+                 var text = obj.target.parentElement.lastElementChild.firstElementChild.nextElementSibling;
+                 var btn = obj.target.parentElement.lastElementChild.lastElementChild;
+            }else {
+                var title = obj.target.parentElement.firstElementChild;
+                var text = obj.target.parentElement.firstElementChild.nextElementSibling;  
+                var btn = obj.target.parentElement.lastElementChild; 
+            }
+          if (title.style.color == 'rgb(191, 32, 37)') {
+              title.style.color = 'black';
+              text.style.color = 'black';
+              btn.style.backgroundColor = 'white';
+              btn.style.color = 'rgb(191, 32, 37)'
+              btn.style.border = '2px solid rgb(191, 32, 37)';
+            }
+          else{
+              title.style.color = 'rgb(191, 32, 37)';
+              text.style.color = 'rgb(191, 32, 37)';
+              btn.style.backgroundColor = 'rgb(191, 32, 37)';
+              btn.style.color = 'white';
+
+            }
+          }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </div>
 {% endblock %}
