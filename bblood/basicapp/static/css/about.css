@@ -1,5 +1,4 @@
 .part-one img {
-    height: 100%;
     width: 100%;
    
 }
@@ -17,13 +16,16 @@
 
 .part-one {
     position: relative;
-    height: 30rem;
+    height: auto;
 }
 
 .part-two {
-    height: 33rem;
+    height: auto;
     position: relative;
     background-color: rgb(211, 211, 211);
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
 
 }
 
@@ -49,5 +51,67 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    width: 30rem;
+    width: 18rem;
+}
+
+.card-body {
+    padding: .5rem;
+}
+
+@media screen and (max-width:572px) {
+    .part-one p {
+        width: 72%;
+        height: auto;
+        left: 1rem;
+        top: 10rem;
+        position: absolute;
+        font-weight: 500;
+        font-size: x-small;
+        padding: 10px;
+    }
+
+    .card {
+        width: 70%;
+    }
+    
+    .part-two .card img {
+        width: 42%;
+        height: 34%;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:572px) {
+    .part-one p {
+        top: 13rem;
+        width: 69%;
+        font-size: small;
+        left: 2rem;
+    }
+
+}
+
+@media screen and (max-width:800px) and (min-width:700px) {
+    .part-one p {
+        width: 58%;
+        height: auto;
+        left: 3rem;
+        top: 16rem;
+        position: absolute;
+        font-weight: 500;
+        font-size: medium;
+        padding: 12px;
+    }
+
+    .card {
+        width: 58%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+   .part-two .card img {
+        width: 42%;
+        height: 34%;
+    }
 }

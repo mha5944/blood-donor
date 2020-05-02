@@ -9,6 +9,7 @@
     font-size: 16px;
     resize: none;
 }
+/*------------ Navbar--------*/
 
 nav .navbar-nav li a{
     color: rgb(192, 0, 0) !important;
@@ -23,6 +24,19 @@ nav .navbar-nav li a{
 a.nav-link {
     margin-top: 40px !important;
     padding: 0px 10px !important;
+}
+
+.dropdown-menu {
+    top: 4rem;
+    left: 59rem;
+    min-width: 6rem !important;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(191, 32, 37);
+    color: white !important;
 }
 
 .custom-index {
@@ -65,9 +79,11 @@ a.nav-link {
       height: 50px;
       margin-left: 2%;
   }
-  /*----------- Carousel ---------*/
+/*----------- Carousel ---------*/
+
+
 .carousel-inner {
-    height: 28rem;
+    height: auto;
 }
 
 .carousel-caption {
@@ -127,9 +143,11 @@ a.nav-link {
 }    
 
 .custom-about {
-    top: 60%;
-    position: relative;
-    left: 30%;
+    width: 100%;
+    position: absolute;
+    top: 4.5rem;
+    text-align: center;
+
 }
 
 .custom-about a {
@@ -164,4 +182,36 @@ a.nav-link {
     color: rgb(126, 126, 126);
 }
 
+/*-------- Responsive --------*/
 
+@media screen and (max-width:1300px) {
+    .second-item .carousel-caption {
+        bottom: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-caption {
+        bottom: 1rem;
+        width: 16rem;
+        font-size: medium;
+        left: 3rem;
+    }
+
+    .second-item .carousel-caption {
+        bottom: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-caption {
+        bottom: 1rem;
+        width: 12rem;
+        font-size: x-small;
+        left: 2rem;
+    }
+
+
+}

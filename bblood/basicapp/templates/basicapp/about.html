@@ -5,16 +5,16 @@
 {% endblock %}
 
 {% block body_block %}
-    <div class="" style=" height: 63rem;" >
+    <div class="" style=" height: auto;" >
         <div class="part-one">
-            <img src="{% static 'images/screen-0.jpg' %}" alt="about image">
+            <img class="img-fluid" src="{% static 'images/screen-0.jpg' %}" alt="about image">
             <p class="darkred">We are a 
                 not-for-profit 501(c)(3) community asset responsible
                  for providing safe, available and affordable blood.</p>
 
         </div>
         <div class="part-two row">
-            <div class="card col-3" style="width: 18rem;">
+            <div class="card col-lg-3">
                 <img class="card-img-top" src="{% static 'images/leadership.png' %}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title darkred">Leadership</h5>
@@ -22,7 +22,7 @@
                   <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
-            <div class="card col-3" style="width: 18rem;">
+            <div class="card col-lg-3 ">
                 <img class="card-img-top" src="{% static 'images/chart.png' %}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title darkred">Financials & Governance</h5>
@@ -35,7 +35,7 @@
                   <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
-            <div class="card col-3" style="width: 18rem;">
+            <div class="card col-lg-3">
                 <img class="card-img-top" src="{% static 'images/handshake.png' %}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title darkred">Donor Bill of Rights</h5>

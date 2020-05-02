@@ -24,8 +24,7 @@
 
 .donation-method h2 {
     text-decoration: underline;
-    position: absolute;
-    margin-left: 35%;
+    width: 100%;
 }
 .donation-method {
     display: flex;
@@ -42,7 +41,7 @@
     height: 260px;
     top: 25%;
 }
-.custom-donation-method img {
+.donation-method img {
     height: 220px;
     width: 260px;
 }

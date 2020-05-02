@@ -40,7 +40,12 @@
                 <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Log Out</a></li>
                 <li class="nav-item"><a class="nav-link" id="userId darkred">Welcome: {{user.username}}</a></li>
                 {% else %}
-                <li><a class="nav navbar-nav navbar-right" href="{% url 'login' %}"><span style="margin-right: 30px; font-size: x-large;" class="fas fa-user"></span></a></li>
+                <li><a class="nav-item dropdown" href="#" id="dropDownNav" data-toggle="dropdown"><span style="margin-right: 30px; font-size: x-large;" class="fas fa-user"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="dropDownNav">
+                        <a class="dropdown-item" href="{% url 'login' %}">Log In</a>
+                        <a class="dropdown-item" href="{% url 'register' %}">Sign Up</a>
+                    </div>
+                </li>
                 {% endif %}
             </ul>
           </div>
@@ -57,11 +62,15 @@
                 <a href="https://www.facebook.com"><img src="{% static 'images/fb_logo.png' %}" alt='facebook link'></a>
 
             </div>
-            <div class="custom-about d-flex flex-row">
+            <div class="custom-about">
                 <a>About</a>
                 <a>Contact us</a>
                 <a>Privacy</a>
                 <a>Terms of Use</a>
             </div>
-        </footer>  
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      
 </body>
