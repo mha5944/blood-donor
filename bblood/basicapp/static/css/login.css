@@ -1,31 +1,44 @@
 h3 {
     color: rgb(191,32,37);
+    padding-top: 30px;
 }
 
-.center-div {
-    margin-top: 30px;
+.custom-login {
+    top: 60px;
     width: 400px;
     height: 500px;
     display:block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 15%;
 }
 
 .custom-login input {
     margin-top: 10px;
     margin-bottom: 5px;
-    width: 300px;
+    width: 70%;
     height: 60px;
+    border: 0px;
     
 }
 
 .bigbtn {
-    width: 300px !important;
+    width: 70% !important;
     height: 60px !important;
     margin-bottom: 15px !important;
     font-weight: 700;
+    border: 3px solid;
+    border-radius: 10px;
 } 
+
+.custom-login input:focus {
+    outline-color: rgb(191,32,37);
+    outline-style: solid 2px;
+}
 
 .redbtn {
     background-color: rgb(191,32,37) !important;
@@ -37,7 +50,9 @@ h3 {
     color: rgb(148, 23, 27);
 }
 
-
+.container-fluid {
+    background-color: rgb(242,242,242);
+}
 
 
 

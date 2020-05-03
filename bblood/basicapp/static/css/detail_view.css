@@ -1,0 +1,19 @@
+.custom-card {
+    width: 500px !important;
+    height: 200px !important;
+    display:block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    margin-top: 20px; 
+    text-align: left !important; 
+  }
+
+  .custom-card .card-body p {
+      font-weight: 600;
+  }
+
+.carddata {
+    font-weight: 400;
+    color: rgb(126, 126, 126);
+}

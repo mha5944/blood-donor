@@ -34,18 +34,20 @@
 
             </ul>
             
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-expand-lg navbar-right">
                 {% if user.is_authenticated %}
-                <li class="nav-item"><a class="nav-link" href="{% url 'detail_view' user.username %}">Detail</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Log Out</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'detail_view' user.username %}">Blood Match</a></li>
                 <li class="nav-item"><a class="nav-link" id="userId darkred">Welcome: {{user.username}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Log Out</a></li>
                 {% else %}
-                <li><a class="nav-item dropdown" href="#" id="dropDownNav" data-toggle="dropdown"><span style="margin-right: 30px; font-size: x-large;" class="fas fa-user"></span></a>
-                    <div class="dropdown-menu" aria-labelledby="dropDownNav">
-                        <a class="dropdown-item" href="{% url 'login' %}">Log In</a>
-                        <a class="dropdown-item" href="{% url 'register' %}">Sign Up</a>
-                    </div>
-                </li>
+                <div class="">
+                    <li><a class="nav-item dropdown" href="#" id="dropDownNav" data-toggle="dropdown"><span style="font-size: x-large;" class="fas fa-user"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropDownNav">
+                            <a class="dropdown-item" href="{% url 'login' %}">Log In</a>
+                            <a class="dropdown-item" href="{% url 'register' %}">Sign Up</a>
+                        </div>
+                    </li>
+                </div>
                 {% endif %}
             </ul>
           </div>

@@ -1,8 +1,9 @@
 h3 {
     color: rgb(191,32,37);
+    padding-top: 30px;
 }
 
-.center-div {
+.custom-register {
     margin-top: 30px;
     width: 400px;
     height: 90%;
@@ -10,21 +11,33 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    position: relative;
+    padding-bottom: 25px;
 }
 
-.custom-login input {
+.custom-register input {
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 270px;
+    width: 70%;
     height: 50px;
+    border: 0px;
     
 }
 
+.custom-register input:focus {
+    outline-color: rgb(191,32,37);
+    outline-style: solid 2px;
+}
+
 .bigbtn {
-    width: 300px !important;
+    width: 58% !important;
     height: 60px !important;
     margin-bottom: 15px !important;
     font-weight: 700;
+    border-radius: 10px;
 } 
 
 .redbtn {
@@ -35,6 +48,9 @@ h3 {
     color: rgb(191, 32, 37);
 }
 
+.container-fluid {
+    background-color: rgb(242,242,242);
+}
 
 
 

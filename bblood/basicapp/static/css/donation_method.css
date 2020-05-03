@@ -1,51 +1,91 @@
 .what-is-blood img {
     width: 400px;
     height: 300px;
-    margin-left: 60%;
-    margin-top: 5%;
-    position: absolute !important;
+    left: 57%;
+    margin-top: 6%;
+    margin-bottom: 7%;
+    position: relative;
 }
 
 .content {
-    margin-left: 10%;
-    margin-top: 5%;
-    height: 200px;
-    max-width : 30% !important;
-    display: inline-block;
-    position: absolute;
-}
-
-.what-is-blood {
-    position: relative !important;
-    display: flex !important;
-    height: 400px;
-    
+    max-width: 41%;
+    right: 330px;
+    margin-top: 10%;
+    height: auto;
+    position: relative;
 }
 
 .donation-method h2 {
     text-decoration: underline;
     width: 100%;
+    margin-bottom:5%;
 }
 .donation-method {
     display: flex;
-    height: 400px;
+    height: auto;
+    margin-bottom:6%;
     text-align: center !important;
 }
 
-
-.custom-donation-method {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 100%;
-    height: 260px;
-    top: 25%;
-}
 .donation-method img {
     height: 220px;
     width: 260px;
 }
-.custom-donation-method div {
-    margin-left: 4%;
-   
+.donation-method div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+@media screen and (max-width:572px) {
+    .what-is-blood .content {
+        max-width: 87%;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+    }
+
+    .what-is-blood img {
+        left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1%;
+        width: 62%;
+        height: 20%;
+    }
+
+    .donation-method div {
+        margin-top: 4%;
+    }
+
+    .donation-method img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width:572px) and (max-width:800px){
+    .what-is-blood .content {
+        max-width: 87%;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+    }
+
+    .what-is-blood img {
+        left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1%;
+        width: 62%;
+        height: 20%;
+    }
 }

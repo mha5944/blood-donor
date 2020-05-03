@@ -7,26 +7,25 @@
 {% block body_block%}
 <div style='height: 100%;' class="container-fluid position-static">
     <div class="row what-is-blood">
-        
-            <div class=" content">
-                <h1>What is Blood?</h1>
-                <p> 
+        <img class="" src="{% static 'images/whatisblood-graphic.png' %}" alt="what is blood image">
+        <div class="content">
+            <h1>What is Blood?</h1>
+            <p> 
                 Blood is made up of four main components.
                 Red blood cells, platelets,
                 plasma and white blood cells.
                 Each whole blood donation has the potential 
                 to save up to three lives.
-                </p>
-                <button type="button" class="learn-more">Learn More</button>
-            </div>
-            <img class="" src="{% static 'images/whatisblood-graphic.png' %}" alt="what is blood image">
+            </p>
+            <button type="button" class="learn-more">Learn More</button>
+        </div>
     </div>
     <div class="row donation-method">
         <h2>Donation Methods</h2>
-        <div class="col-lg-3"><a><img src="{% static 'images/blood_donation.png' %}" alt="Blood donation "></a></div>
-        <div class="col-lg-3"><a><img src="{% static 'images/plasma_donation.png' %}" alt="Plasma donation"></a></div>
-        <div class="col-lg-3"><a><img src="{% static 'images/red_cell_donation.png' %}" alt="Red cell donation"></a></div>
-        <div class="col-lg-3"><a><img src="{% static 'images/platelet_donation.png' %}" alt="Platelet donation"></a></div>
+        <div class="col-lg-3 col-sm-6"><a href=""><img src="{% static 'images/blood_donation.png' %}" alt="Blood donation "></a></div>
+        <div class="col-lg-3 col-sm-6"><a href=""><img src="{% static 'images/plasma_donation.png' %}" alt="Plasma donation"></a></div>
+        <div class="col-lg-3 col-sm-6"><a href=""><img src="{% static 'images/red_cell_donation.png' %}" alt="Red cell donation"></a></div>
+        <div class="col-lg-3 col-sm-6"><a href=""><img src="{% static 'images/platelet_donation.png' %}" alt="Platelet donation"></a></div>
     </div>
 </div>
 {% endblock %}
